@@ -1,16 +1,24 @@
 {
   "manifest_version": 3,
-  "name": "Quick Factchecker",
+  "name": "Factcheck Panel",
   "version": "1.0",
-  "description": "Factcheckt de actieve tab via Mistral AI",
+  "description": "Factcheckt de actieve tab via Mistral AI in een vaste zijbalk",
   "permissions": [
     "activeTab",
-    "scripting"
+    "scripting",
+    "sidePanel"
   ],
   "host_permissions": [
+    "<all_urls>",
     "https://api.mistral.ai/*"
   ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "popup.html"
+  },
   "action": {
-    "default_popup": "popup.html"
+    "default_title": "Open Factcheck Panel"
   }
 }
