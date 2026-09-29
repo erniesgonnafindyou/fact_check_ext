@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 380px;
+      font-family: system-ui, -apple-system, sans-serif;
+      padding: 14px;
+      margin: 0;
+      background: #18181b;
+      color: #f4f4f5;
+    }
+    h2 { font-size: 16px; margin: 0 0 10px 0; color: #38bdf8; }
+    button {
+      width: 100%;
+      padding: 9px;
+      background: #0284c7;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    button:hover { background: #0369a1; }
+    #status { margin-top: 10px; font-size: 13px; color: #a1a1aa; }
+    #output {
+      margin-top: 12px;
+      max-height: 320px;
+      overflow-y: auto;
+      font-size: 13px;
+      line-height: 1.5;
+      white-space: pre-wrap;
+      border-top: 1px solid #27272a;
+      padding-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Tab Factchecker</h2>
+  <button id="checkBtn">Factcheck Deze Pagina</button>
+  <div id="status"></div>
+  <div id="output"></div>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

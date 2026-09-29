@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Quick Factchecker",
+  "version": "1.0",
+  "description": "Factcheckt de actieve tab via Mistral AI",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://api.mistral.ai/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

@@ -1,0 +1,1 @@
+export const MISTRAL_API_KEY = "YOUR_KEY";
