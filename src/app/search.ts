@@ -1,7 +1,7 @@
-import { SEARCH_KEY, SEARCH_URL } from "./config.js";
+import { SEARCH_KEY, SEARCH_URL } from "./config";
 
 // Eenvoudige zoekfunctie (bijv. met Tavily of Brave Search API)
-export async function searchWeb(query) {
+export async function searchWeb(query: string) {
   // Voorbeeld met een gratis Tavily/Brave search fetch:
   const res = await fetch(SEARCH_URL, {
     method: "POST",
@@ -13,5 +13,5 @@ export async function searchWeb(query) {
     })
   });
   const data = await res.json();
-  return data.results.map(r => `${r.title}: ${r.content}`).join("\n\n");
+  return data.results.map((r: any) => `${r.title}: ${r.content}`).join("\n\n");
 };

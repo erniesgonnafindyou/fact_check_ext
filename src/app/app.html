@@ -1,0 +1,11 @@
+<h2>Factcheck Tab</h2>
+<button (click)="checkPage()" [disabled]="isLoading()">Factcheck Deze Pagina</button>
+
+<div id="meta-bar">
+  <span>{{ status() }}</span>
+  <span>{{ tokenInfo() }}</span>
+</div>
+
+@if (outputHtml() || errorMsg()) {
+  <div id="output" [class.error-box]="!!errorMsg()" [innerHTML]="errorMsg() || outputHtml()"></div>
+}

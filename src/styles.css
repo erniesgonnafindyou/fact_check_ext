@@ -1,0 +1,38 @@
+body {
+  width: 100%;
+  min-width: 280px;
+  font-family: system-ui, -apple-system, sans-serif;
+  padding: 14px;
+  margin: 0;
+  background: #121214;
+  color: #e4e4e7;
+  box-sizing: border-box;
+}
+
+#output {
+  margin-top: 10px;
+  max-height: 1000px;
+  overflow-y: auto;
+  font-size: 13px;
+  line-height: 1.6;
+  background: #18181b;
+  border: 1px solid #27272a;
+  border-radius: 8px;
+  padding: 14px;
+}
+#output h1, #output h2, #output h3 {
+  color: #38bdf8;
+  margin: 14px 0 6px 0;
+  font-weight: 600;
+}
+#output h3 { font-size: 14px; }
+#output strong { color: #f4f4f5; }
+#output hr {
+  border: none;
+  border-top: 1px solid #27272a;
+  margin: 12px 0;
+}
+#output li {
+  margin-left: 18px;
+  margin-bottom: 4px;
+}
